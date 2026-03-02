@@ -6,7 +6,7 @@ export default function Admin() {
     <>
 
       {/*  Top Navigation Bar  */}
-      <header className="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-gray-200 dark:border-gray-800 bg-surface-light dark:bg-surface-dark px-6 py-3 shadow-sm">
+      <header className="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-surface-dark px-6 py-3 shadow-sm">
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-2 text-primary">
             <span className="material-symbols-outlined text-3xl">grid_view</span>
@@ -43,7 +43,7 @@ export default function Admin() {
               <h1 className="text-2xl font-bold text-slate-900 dark:text-white">Cài đặt</h1>
               <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">Quản lý hệ thống DDS</p>
             </div>
-            <div className="bg-surface-light dark:bg-surface-dark rounded-xl shadow-sm border border-gray-200 dark:border-gray-800 p-2 flex flex-col gap-1">
+            <div className="bg-white dark:bg-surface-dark rounded-xl shadow-sm border border-gray-200 dark:border-gray-800 p-2 flex flex-col gap-1">
               <a className="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-primary/10 text-primary font-medium transition-colors" href="#">
                 <span className="material-symbols-outlined text-[20px]">group</span>
                 <span className="text-sm">Quản lý người dùng</span>
@@ -63,7 +63,7 @@ export default function Admin() {
             </div>
           </aside>
           {/*  Main Content Area  */}
-          <div className="flex-1 w-full bg-surface-light dark:bg-surface-dark rounded-xl shadow-sm border border-gray-200 dark:border-gray-800 overflow-hidden flex flex-col">
+          <div className="flex-1 w-full bg-white dark:bg-surface-dark rounded-xl shadow-sm border border-gray-200 dark:border-gray-800 overflow-hidden flex flex-col">
             {/*  Content Header  */}
             <div className="p-6 border-b border-gray-100 dark:border-gray-800 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
               <div>
@@ -76,7 +76,7 @@ export default function Admin() {
               </button>
             </div>
             {/*  Filters & Search  */}
-            <div className="px-6 py-4 bg-slate-50/50 dark:bg-slate-900/20 border-b border-gray-100 dark:border-gray-800 flex flex-wrap gap-3">
+            <div className="px-6 py-4 bg-white dark:bg-slate-900/20 border-b border-gray-100 dark:border-gray-800 flex flex-wrap gap-3">
               <div className="relative flex-grow max-w-md">
                 <span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-[20px]">search</span>
                 <input className="w-full pl-10 pr-4 py-2 rounded-lg border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-800 text-sm focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-shadow" placeholder="Tìm kiếm theo tên hoặc email..." type="text" />
@@ -244,9 +244,9 @@ export default function Admin() {
       {/*  Overlay Modal for Creating User  */}
       <div className="fixed inset-0 z-[100] bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
         {/*  Modal Content  */}
-        <div className="bg-surface-light dark:bg-surface-dark w-full max-w-lg rounded-xl shadow-2xl border border-gray-200 dark:border-gray-800 overflow-hidden transform transition-all animate-fade-in-up">
+        <div className="bg-white dark:bg-surface-dark w-full max-w-lg rounded-xl shadow-2xl border border-gray-200 dark:border-gray-800 overflow-hidden transform transition-all animate-fade-in-up">
           {/*  Modal Header  */}
-          <div className="flex items-center justify-between px-6 py-5 border-b border-gray-100 dark:border-gray-800 bg-slate-50/50 dark:bg-slate-800/30">
+          <div className="flex items-center justify-between px-6 py-5 border-b border-gray-100 dark:border-gray-800 bg-white dark:bg-slate-800/30">
             <h3 className="text-lg font-bold text-slate-900 dark:text-white">Thêm người dùng mới</h3>
             <button className="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition-colors">
               <span className="material-symbols-outlined">close</span>

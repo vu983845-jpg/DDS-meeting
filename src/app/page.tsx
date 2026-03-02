@@ -29,19 +29,19 @@ export default function Dashboard() {
                             <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-gray-400 group-focus-within:text-primary">
                                 <span className="material-symbols-outlined text-[20px]">search</span>
                             </div>
-                            <input className="block w-full pl-10 pr-3 py-2 border border-gray-200 rounded-lg leading-5 bg-background-light text-text-main placeholder-gray-400 focus:outline-none focus:bg-white focus:ring-1 focus:ring-primary focus:border-primary sm:text-sm transition-all" placeholder="Search issues, machines, IDs..." type="text" />
+                            <input className="block w-full pl-10 pr-3 py-2 border border-gray-200 rounded-lg leading-5 bg-white text-text-main placeholder-gray-400 focus:outline-none focus:bg-white focus:ring-1 focus:ring-primary focus:border-primary sm:text-sm transition-all" placeholder="Search issues, machines, IDs..." type="text" />
                         </div>
                     </div>
                     {/*  Right: Controls & User  */}
                     <div className="flex items-center gap-3">
                         {/*  Date Selector  */}
-                        <button className="hidden xl:flex items-center gap-2 px-3 py-2 bg-background-light hover:bg-gray-200 rounded-lg text-sm font-medium text-text-main transition-colors border border-transparent hover:border-gray-300">
+                        <button className="hidden xl:flex items-center gap-2 px-3 py-2 bg-white hover:bg-gray-200 rounded-lg text-sm font-medium text-text-main transition-colors border border-transparent hover:border-gray-300">
                             <span className="material-symbols-outlined text-[18px]">calendar_today</span>
                             <span>Yesterday</span>
                             <span className="material-symbols-outlined text-[18px] text-gray-400">arrow_drop_down</span>
                         </button>
                         {/*  Toggles  */}
-                        <div className="hidden lg:flex items-center bg-background-light rounded-lg p-1 border border-gray-200">
+                        <div className="hidden lg:flex items-center bg-white rounded-lg p-1 border border-gray-200">
                             <button className="px-3 py-1.5 rounded-md bg-white shadow-sm text-xs font-bold text-primary border border-gray-100 flex items-center gap-1">
                                 <span className="size-2 rounded-full bg-green-500 animate-pulse"></span>
                                 DDS Active
@@ -76,7 +76,7 @@ export default function Dashboard() {
                             <div className="p-2 bg-blue-50 text-blue-600 rounded-lg">
                                 <span className="material-symbols-outlined">assignment</span>
                             </div>
-                            <span className="text-xs font-medium text-gray-400 bg-gray-50 px-2 py-1 rounded">Last 24h</span>
+                            <span className="text-xs font-medium text-gray-400 bg-white px-2 py-1 rounded">Last 24h</span>
                         </div>
                         <h3 className="text-gray-500 text-sm font-medium">Total Issues</h3>
                         <div className="flex items-baseline gap-2 mt-1">
@@ -93,7 +93,7 @@ export default function Dashboard() {
                             <div className="p-2 bg-orange-50 text-orange-600 rounded-lg">
                                 <span className="material-symbols-outlined">timer_off</span>
                             </div>
-                            <span className="text-xs font-medium text-gray-400 bg-gray-50 px-2 py-1 rounded">Target: &lt; 300</span>
+                            <span className="text-xs font-medium text-gray-400 bg-white px-2 py-1 rounded">Target: &lt; 300</span>
                         </div>
                         <h3 className="text-gray-500 text-sm font-medium">Total Downtime (min)</h3>
                         <div className="flex items-baseline gap-2 mt-1">
@@ -155,20 +155,20 @@ export default function Dashboard() {
                                 <div className="flex flex-wrap items-center gap-3">
                                     <div className="flex items-center gap-2 overflow-x-auto scrollbar-hide py-1">
                                         <button className="bg-text-main text-white px-3 py-1.5 rounded-full text-sm font-medium transition-colors whitespace-nowrap">All Depts</button>
-                                        <button className="bg-background-light text-gray-600 hover:bg-gray-200 px-3 py-1.5 rounded-full text-sm font-medium transition-colors whitespace-nowrap">Steaming</button>
-                                        <button className="bg-background-light text-gray-600 hover:bg-gray-200 px-3 py-1.5 rounded-full text-sm font-medium transition-colors whitespace-nowrap">Shelling</button>
-                                        <button className="bg-background-light text-gray-600 hover:bg-gray-200 px-3 py-1.5 rounded-full text-sm font-medium transition-colors whitespace-nowrap">Packaging</button>
-                                        <button className="bg-background-light text-gray-600 hover:bg-gray-200 px-3 py-1.5 rounded-full text-sm font-medium transition-colors whitespace-nowrap">Maintenance</button>
+                                        <button className="bg-white text-gray-600 hover:bg-gray-200 px-3 py-1.5 rounded-full text-sm font-medium transition-colors whitespace-nowrap">Steaming</button>
+                                        <button className="bg-white text-gray-600 hover:bg-gray-200 px-3 py-1.5 rounded-full text-sm font-medium transition-colors whitespace-nowrap">Shelling</button>
+                                        <button className="bg-white text-gray-600 hover:bg-gray-200 px-3 py-1.5 rounded-full text-sm font-medium transition-colors whitespace-nowrap">Packaging</button>
+                                        <button className="bg-white text-gray-600 hover:bg-gray-200 px-3 py-1.5 rounded-full text-sm font-medium transition-colors whitespace-nowrap">Maintenance</button>
                                     </div>
                                     <div className="h-6 w-px bg-gray-200 mx-1 hidden sm:block"></div>
                                     <div className="flex gap-2">
-                                        <select className="form-select text-sm py-1.5 pl-3 pr-8 rounded-lg border-gray-200 bg-background-light text-gray-600 focus:ring-primary focus:border-primary">
+                                        <select className="form-select text-sm py-1.5 pl-3 pr-8 rounded-lg border-gray-200 bg-white text-gray-600 focus:ring-primary focus:border-primary">
                                             <option>Status: All</option>
                                             <option>Open</option>
                                             <option>In Progress</option>
                                             <option>Resolved</option>
                                         </select>
-                                        <select className="form-select text-sm py-1.5 pl-3 pr-8 rounded-lg border-gray-200 bg-background-light text-gray-600 focus:ring-primary focus:border-primary">
+                                        <select className="form-select text-sm py-1.5 pl-3 pr-8 rounded-lg border-gray-200 bg-white text-gray-600 focus:ring-primary focus:border-primary">
                                             <option>Impact: All</option>
                                             <option>High</option>
                                             <option>Medium</option>
@@ -181,7 +181,7 @@ export default function Dashboard() {
                             <div className="overflow-x-auto flex-1">
                                 <table className="w-full text-left border-collapse">
                                     <thead>
-                                        <tr className="bg-gray-50/50 border-b border-border-subtle text-xs uppercase tracking-wider text-gray-500 font-semibold">
+                                        <tr className="bg-white/50 border-b border-border-subtle text-xs uppercase tracking-wider text-gray-500 font-semibold">
                                             <th className="px-5 py-3 w-20">ID</th>
                                             <th className="px-5 py-3">Dept</th>
                                             <th className="px-5 py-3">Time</th>
@@ -193,7 +193,7 @@ export default function Dashboard() {
                                     </thead>
                                     <tbody className="divide-y divide-border-subtle text-sm">
                                         {/*  Row 1  */}
-                                        <tr className="group hover:bg-gray-50 transition-colors cursor-pointer">
+                                        <tr className="group hover:bg-white transition-colors cursor-pointer">
                                             <td className="px-5 py-4 font-medium text-text-main">#1023</td>
                                             <td className="px-5 py-4">
                                                 <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700 border border-blue-100">
@@ -216,7 +216,7 @@ export default function Dashboard() {
                                             </td>
                                         </tr>
                                         {/*  Row 2  */}
-                                        <tr className="group hover:bg-gray-50 transition-colors cursor-pointer">
+                                        <tr className="group hover:bg-white transition-colors cursor-pointer">
                                             <td className="px-5 py-4 font-medium text-text-main">#1022</td>
                                             <td className="px-5 py-4">
                                                 <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium bg-orange-50 text-orange-700 border border-orange-100">
@@ -239,7 +239,7 @@ export default function Dashboard() {
                                             </td>
                                         </tr>
                                         {/*  Row 3  */}
-                                        <tr className="group hover:bg-gray-50 transition-colors cursor-pointer">
+                                        <tr className="group hover:bg-white transition-colors cursor-pointer">
                                             <td className="px-5 py-4 font-medium text-text-main">#1021</td>
                                             <td className="px-5 py-4">
                                                 <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium bg-purple-50 text-purple-700 border border-purple-100">
@@ -262,7 +262,7 @@ export default function Dashboard() {
                                             </td>
                                         </tr>
                                         {/*  Row 4  */}
-                                        <tr className="group hover:bg-gray-50 transition-colors cursor-pointer">
+                                        <tr className="group hover:bg-white transition-colors cursor-pointer">
                                             <td className="px-5 py-4 font-medium text-text-main">#1020</td>
                                             <td className="px-5 py-4">
                                                 <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium bg-orange-50 text-orange-700 border border-orange-100">
@@ -285,7 +285,7 @@ export default function Dashboard() {
                                             </td>
                                         </tr>
                                         {/*  Row 5  */}
-                                        <tr className="group hover:bg-gray-50 transition-colors cursor-pointer">
+                                        <tr className="group hover:bg-white transition-colors cursor-pointer">
                                             <td className="px-5 py-4 font-medium text-text-main">#1019</td>
                                             <td className="px-5 py-4">
                                                 <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-700 border border-gray-200">
@@ -311,7 +311,7 @@ export default function Dashboard() {
                                 </table>
                             </div>
                             {/*  Pagination (Simple)  */}
-                            <div className="px-5 py-3 border-t border-border-subtle flex items-center justify-between bg-gray-50 rounded-b-xl">
+                            <div className="px-5 py-3 border-t border-border-subtle flex items-center justify-between bg-white rounded-b-xl">
                                 <span className="text-xs text-gray-500">Showing 1-5 of 12 issues</span>
                                 <div className="flex gap-2">
                                     <button className="p-1 rounded hover:bg-gray-200 text-gray-500 disabled:opacity-50">
@@ -337,7 +337,7 @@ export default function Dashboard() {
                             </div>
                             <div className="p-4 flex flex-col gap-3">
                                 {/*  Trigger Item 1  */}
-                                <div className="flex gap-3 p-3 rounded-lg bg-background-light border border-border-subtle hover:border-red-200 transition-colors group">
+                                <div className="flex gap-3 p-3 rounded-lg bg-white border border-border-subtle hover:border-red-200 transition-colors group">
                                     <div className="mt-0.5 text-red-600">
                                         <span className="material-symbols-outlined text-[20px]">warning</span>
                                     </div>
@@ -355,7 +355,7 @@ export default function Dashboard() {
                                     </div>
                                 </div>
                                 {/*  Trigger Item 2  */}
-                                <div className="flex gap-3 p-3 rounded-lg bg-background-light border border-border-subtle hover:border-red-200 transition-colors group">
+                                <div className="flex gap-3 p-3 rounded-lg bg-white border border-border-subtle hover:border-red-200 transition-colors group">
                                     <div className="mt-0.5 text-orange-500">
                                         <span className="material-symbols-outlined text-[20px]">report_problem</span>
                                     </div>

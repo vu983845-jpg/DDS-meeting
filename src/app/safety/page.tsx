@@ -6,7 +6,7 @@ export default function Safety() {
         <>
 
             {/*  Header  */}
-            <header className="bg-surface-light border-b border-border-color h-16 flex-none sticky top-0 z-20 px-6 flex items-center justify-between shadow-sm">
+            <header className="bg-white border-b border-border-color h-16 flex-none sticky top-0 z-20 px-6 flex items-center justify-between shadow-sm">
                 <div className="flex items-center gap-8">
                     <div className="flex items-center gap-3 text-primary">
                         <span className="material-symbols-outlined text-3xl">safety_check</span>
@@ -26,10 +26,10 @@ export default function Safety() {
                         <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-text-secondary">
                             <span className="material-symbols-outlined text-[20px]">search</span>
                         </span>
-                        <input className="w-full bg-background-light border-none rounded-lg py-2 pl-10 pr-4 text-sm text-text-main placeholder-text-secondary focus:ring-2 focus:ring-primary/20" placeholder="Tìm kiếm..." type="text" />
+                        <input className="w-full bg-white border-none rounded-lg py-2 pl-10 pr-4 text-sm text-text-main placeholder-text-secondary focus:ring-2 focus:ring-primary/20" placeholder="Tìm kiếm..." type="text" />
                     </div>
                     {/*  Notifications  */}
-                    <button className="text-text-secondary hover:text-primary transition-colors p-2 rounded-full hover:bg-background-light relative">
+                    <button className="text-text-secondary hover:text-primary transition-colors p-2 rounded-full hover:bg-white relative">
                         <span className="material-symbols-outlined">notifications</span>
                         <span className="absolute top-2 right-2 w-2 h-2 bg-primary rounded-full border border-white"></span>
                     </button>
@@ -49,11 +49,11 @@ export default function Safety() {
                                 <p className="text-text-secondary text-sm mt-1">Theo dõi và xử lý các vấn đề an toàn trong nhà máy</p>
                             </div>
                             <div className="flex items-center gap-3">
-                                <button className="flex items-center gap-2 px-3 py-2 bg-white border border-border-color rounded-lg text-sm font-medium text-text-main hover:bg-background-light transition-colors shadow-sm">
+                                <button className="flex items-center gap-2 px-3 py-2 bg-white border border-border-color rounded-lg text-sm font-medium text-text-main hover:bg-white transition-colors shadow-sm">
                                     <span className="material-symbols-outlined text-[18px]">filter_list</span>
                                     <span>Lọc</span>
                                 </button>
-                                <button className="flex items-center gap-2 px-3 py-2 bg-white border border-border-color rounded-lg text-sm font-medium text-text-main hover:bg-background-light transition-colors shadow-sm">
+                                <button className="flex items-center gap-2 px-3 py-2 bg-white border border-border-color rounded-lg text-sm font-medium text-text-main hover:bg-white transition-colors shadow-sm">
                                     <span className="material-symbols-outlined text-[18px]">sort</span>
                                     <span>Sắp xếp</span>
                                 </button>
@@ -65,7 +65,7 @@ export default function Safety() {
                         </div>
                         {/*  Stats Cards (Optional Context)  */}
                         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-                            <div className="bg-surface-light p-4 rounded-xl border border-border-color shadow-sm flex items-center justify-between">
+                            <div className="bg-white p-4 rounded-xl border border-border-color shadow-sm flex items-center justify-between">
                                 <div>
                                     <p className="text-xs font-medium text-text-secondary uppercase">Tổng số cảnh báo</p>
                                     <p className="text-2xl font-bold text-text-main mt-1">124</p>
@@ -74,7 +74,7 @@ export default function Safety() {
                                     <span className="material-symbols-outlined">analytics</span>
                                 </div>
                             </div>
-                            <div className="bg-surface-light p-4 rounded-xl border border-border-color shadow-sm flex items-center justify-between">
+                            <div className="bg-white p-4 rounded-xl border border-border-color shadow-sm flex items-center justify-between">
                                 <div>
                                     <p className="text-xs font-medium text-text-secondary uppercase">Đang mở</p>
                                     <p className="text-2xl font-bold text-primary mt-1">8</p>
@@ -83,7 +83,7 @@ export default function Safety() {
                                     <span className="material-symbols-outlined">warning</span>
                                 </div>
                             </div>
-                            <div className="bg-surface-light p-4 rounded-xl border border-border-color shadow-sm flex items-center justify-between">
+                            <div className="bg-white p-4 rounded-xl border border-border-color shadow-sm flex items-center justify-between">
                                 <div>
                                     <p className="text-xs font-medium text-text-secondary uppercase">Đang xử lý</p>
                                     <p className="text-2xl font-bold text-yellow-600 mt-1">12</p>
@@ -92,7 +92,7 @@ export default function Safety() {
                                     <span className="material-symbols-outlined">pending</span>
                                 </div>
                             </div>
-                            <div className="bg-surface-light p-4 rounded-xl border border-border-color shadow-sm flex items-center justify-between">
+                            <div className="bg-white p-4 rounded-xl border border-border-color shadow-sm flex items-center justify-between">
                                 <div>
                                     <p className="text-xs font-medium text-text-secondary uppercase">Đã đóng (Tháng này)</p>
                                     <p className="text-2xl font-bold text-green-600 mt-1">45</p>
@@ -103,10 +103,10 @@ export default function Safety() {
                             </div>
                         </div>
                         {/*  Data Table  */}
-                        <div className="bg-surface-light rounded-xl border border-border-color shadow-sm overflow-hidden">
+                        <div className="bg-white rounded-xl border border-border-color shadow-sm overflow-hidden">
                             <div className="overflow-x-auto">
                                 <table className="w-full text-left text-sm whitespace-nowrap">
-                                    <thead className="bg-background-light border-b border-border-color text-text-secondary">
+                                    <thead className="bg-white border-b border-border-color text-text-secondary">
                                         <tr>
                                             <th className="px-6 py-3 font-semibold">ID</th>
                                             <th className="px-6 py-3 font-semibold">Ngày ghi nhận</th>
@@ -120,7 +120,7 @@ export default function Safety() {
                                     </thead>
                                     <tbody className="divide-y divide-border-color">
                                         {/*  Row 1  */}
-                                        <tr className="hover:bg-background-light/50 transition-colors group">
+                                        <tr className="hover:bg-white/50 transition-colors group">
                                             <td className="px-6 py-4 font-medium text-text-secondary">ST-001</td>
                                             <td className="px-6 py-4 text-text-main">24/05/2024</td>
                                             <td className="px-6 py-4 font-medium text-text-main">Tràn dầu khu vực A</td>
@@ -149,7 +149,7 @@ export default function Safety() {
                                             </td>
                                         </tr>
                                         {/*  Row 2  */}
-                                        <tr className="hover:bg-background-light/50 transition-colors group">
+                                        <tr className="hover:bg-white/50 transition-colors group">
                                             <td className="px-6 py-4 font-medium text-text-secondary">ST-002</td>
                                             <td className="px-6 py-4 text-text-main">23/05/2024</td>
                                             <td className="px-6 py-4 font-medium text-text-main">Dây điện hở máy CNC</td>
@@ -177,7 +177,7 @@ export default function Safety() {
                                             </td>
                                         </tr>
                                         {/*  Row 3  */}
-                                        <tr className="hover:bg-background-light/50 transition-colors group">
+                                        <tr className="hover:bg-white/50 transition-colors group">
                                             <td className="px-6 py-4 font-medium text-text-secondary">ST-003</td>
                                             <td className="px-6 py-4 text-text-main">22/05/2024</td>
                                             <td className="px-6 py-4 font-medium text-text-main">Thiếu biển báo lối thoát</td>
@@ -206,7 +206,7 @@ export default function Safety() {
                                             </td>
                                         </tr>
                                         {/*  Row 4  */}
-                                        <tr className="hover:bg-background-light/50 transition-colors group">
+                                        <tr className="hover:bg-white/50 transition-colors group">
                                             <td className="px-6 py-4 font-medium text-text-secondary">ST-004</td>
                                             <td className="px-6 py-4 text-text-main">21/05/2024</td>
                                             <td className="px-6 py-4 font-medium text-text-main">Sàn trơn trượt kho B</td>
@@ -236,7 +236,7 @@ export default function Safety() {
                                             </td>
                                         </tr>
                                         {/*  Row 5  */}
-                                        <tr className="hover:bg-background-light/50 transition-colors group">
+                                        <tr className="hover:bg-white/50 transition-colors group">
                                             <td className="px-6 py-4 font-medium text-text-secondary">ST-005</td>
                                             <td className="px-6 py-4 text-text-main">20/05/2024</td>
                                             <td className="px-6 py-4 font-medium text-text-main">Lỗi cảm biến cửa</td>
@@ -269,17 +269,17 @@ export default function Safety() {
                                 </table>
                             </div>
                             {/*  Pagination  */}
-                            <div className="px-6 py-4 border-t border-border-color flex items-center justify-between bg-surface-light">
+                            <div className="px-6 py-4 border-t border-border-color flex items-center justify-between bg-white">
                                 <p className="text-sm text-text-secondary">Hiển thị <span className="font-medium text-text-main">1</span> đến <span className="font-medium text-text-main">5</span> trong <span className="font-medium text-text-main">124</span> kết quả</p>
                                 <div className="flex items-center gap-2">
-                                    <button className="p-2 border border-border-color rounded-lg text-text-secondary hover:bg-background-light disabled:opacity-50">
+                                    <button className="p-2 border border-border-color rounded-lg text-text-secondary hover:bg-white disabled:opacity-50">
                                         <span className="material-symbols-outlined text-sm">chevron_left</span>
                                     </button>
                                     <button className="px-3 py-1.5 bg-primary text-white rounded-lg text-sm font-medium">1</button>
-                                    <button className="px-3 py-1.5 text-text-main hover:bg-background-light rounded-lg text-sm font-medium">2</button>
-                                    <button className="px-3 py-1.5 text-text-main hover:bg-background-light rounded-lg text-sm font-medium">3</button>
+                                    <button className="px-3 py-1.5 text-text-main hover:bg-white rounded-lg text-sm font-medium">2</button>
+                                    <button className="px-3 py-1.5 text-text-main hover:bg-white rounded-lg text-sm font-medium">3</button>
                                     <span className="px-2 text-text-secondary">...</span>
-                                    <button className="p-2 border border-border-color rounded-lg text-text-secondary hover:bg-background-light">
+                                    <button className="p-2 border border-border-color rounded-lg text-text-secondary hover:bg-white">
                                         <span className="material-symbols-outlined text-sm">chevron_right</span>
                                     </button>
                                 </div>
@@ -288,11 +288,11 @@ export default function Safety() {
                     </div>
                 </main>
                 {/*  Right Side Panel (Create Form)  */}
-                <aside className="w-[480px] bg-surface-light border-l border-border-color shadow-xl flex flex-col h-full absolute right-0 top-0 z-30 translate-x-0 transition-transform duration-300">
+                <aside className="w-[480px] bg-white border-l border-border-color shadow-xl flex flex-col h-full absolute right-0 top-0 z-30 translate-x-0 transition-transform duration-300">
                     {/*  Header  */}
                     <div className="px-6 py-4 border-b border-border-color flex items-center justify-between bg-white">
                         <h3 className="text-lg font-bold text-text-main">Thêm cảnh báo an toàn mới</h3>
-                        <button className="text-text-secondary hover:text-text-main p-1 rounded-md hover:bg-background-light transition-colors">
+                        <button className="text-text-secondary hover:text-text-main p-1 rounded-md hover:bg-white transition-colors">
                             <span className="material-symbols-outlined">close</span>
                         </button>
                     </div>
@@ -301,19 +301,19 @@ export default function Safety() {
                         {/*  Trigger Name  */}
                         <div className="space-y-1.5">
                             <label className="text-sm font-medium text-text-main block">Tên cảnh báo <span className="text-primary">*</span></label>
-                            <input className="w-full rounded-lg border-border-color bg-background-light focus:bg-white focus:border-primary focus:ring-1 focus:ring-primary text-sm p-2.5 placeholder-gray-400" placeholder="Ví dụ: Dây điện hở tại khu vực cắt" type="text" />
+                            <input className="w-full rounded-lg border-border-color bg-white focus:bg-white focus:border-primary focus:ring-1 focus:ring-primary text-sm p-2.5 placeholder-gray-400" placeholder="Ví dụ: Dây điện hở tại khu vực cắt" type="text" />
                         </div>
                         <div className="grid grid-cols-2 gap-4">
                             {/*  Date  */}
                             <div className="space-y-1.5">
                                 <label className="text-sm font-medium text-text-main block">Thời gian phát hiện <span className="text-primary">*</span></label>
-                                <input className="w-full rounded-lg border-border-color bg-background-light focus:bg-white focus:border-primary focus:ring-1 focus:ring-primary text-sm p-2.5 text-text-main" type="datetime-local" />
+                                <input className="w-full rounded-lg border-border-color bg-white focus:bg-white focus:border-primary focus:ring-1 focus:ring-primary text-sm p-2.5 text-text-main" type="datetime-local" />
                             </div>
                             {/*  Severity  */}
                             <div className="space-y-1.5">
                                 <label className="text-sm font-medium text-text-main block">Mức độ <span className="text-primary">*</span></label>
                                 <div className="relative">
-                                    <select className="w-full rounded-lg border-border-color bg-background-light focus:bg-white focus:border-primary focus:ring-1 focus:ring-primary text-sm p-2.5 appearance-none text-text-main pr-8">
+                                    <select className="w-full rounded-lg border-border-color bg-white focus:bg-white focus:border-primary focus:ring-1 focus:ring-primary text-sm p-2.5 appearance-none text-text-main pr-8">
                                         <option>Thấp</option>
                                         <option>Trung bình</option>
                                         <option selected={true}>Cao</option>
@@ -328,14 +328,14 @@ export default function Safety() {
                         {/*  Description  */}
                         <div className="space-y-1.5">
                             <label className="text-sm font-medium text-text-main block">Mô tả chi tiết</label>
-                            <textarea className="w-full rounded-lg border-border-color bg-background-light focus:bg-white focus:border-primary focus:ring-1 focus:ring-primary text-sm p-2.5 placeholder-gray-400" placeholder="Mô tả hiện trạng, nguyên nhân sơ bộ..." rows={4}></textarea>
+                            <textarea className="w-full rounded-lg border-border-color bg-white focus:bg-white focus:border-primary focus:ring-1 focus:ring-primary text-sm p-2.5 placeholder-gray-400" placeholder="Mô tả hiện trạng, nguyên nhân sơ bộ..." rows={4}></textarea>
                         </div>
                         <div className="grid grid-cols-2 gap-4">
                             {/*  Dept/Area  */}
                             <div className="space-y-1.5">
                                 <label className="text-sm font-medium text-text-main block">Khu vực / Bộ phận</label>
                                 <div className="relative">
-                                    <select className="w-full rounded-lg border-border-color bg-background-light focus:bg-white focus:border-primary focus:ring-1 focus:ring-primary text-sm p-2.5 appearance-none text-text-main pr-8">
+                                    <select className="w-full rounded-lg border-border-color bg-white focus:bg-white focus:border-primary focus:ring-1 focus:ring-primary text-sm p-2.5 appearance-none text-text-main pr-8">
                                         <option disabled={true} selected={true} value="">Chọn khu vực</option>
                                         <option>Kho A</option>
                                         <option>Kho B</option>
@@ -351,7 +351,7 @@ export default function Safety() {
                             <div className="space-y-1.5">
                                 <label className="text-sm font-medium text-text-main block">Người phụ trách</label>
                                 <div className="relative">
-                                    <select className="w-full rounded-lg border-border-color bg-background-light focus:bg-white focus:border-primary focus:ring-1 focus:ring-primary text-sm p-2.5 appearance-none text-text-main pr-8">
+                                    <select className="w-full rounded-lg border-border-color bg-white focus:bg-white focus:border-primary focus:ring-1 focus:ring-primary text-sm p-2.5 appearance-none text-text-main pr-8">
                                         <option disabled={true} selected={true} value="">Chọn nhân sự</option>
                                         <option>Nguyễn Văn A</option>
                                         <option>Trần Thị B</option>
@@ -367,13 +367,13 @@ export default function Safety() {
                         {/*  Action Required  */}
                         <div className="space-y-1.5">
                             <label className="text-sm font-medium text-text-main block">Hành động cần thiết</label>
-                            <textarea className="w-full rounded-lg border-border-color bg-background-light focus:bg-white focus:border-primary focus:ring-1 focus:ring-primary text-sm p-2.5 placeholder-gray-400" placeholder="Các bước cần thực hiện để khắc phục..." rows={3}></textarea>
+                            <textarea className="w-full rounded-lg border-border-color bg-white focus:bg-white focus:border-primary focus:ring-1 focus:ring-primary text-sm p-2.5 placeholder-gray-400" placeholder="Các bước cần thực hiện để khắc phục..." rows={3}></textarea>
                         </div>
                         {/*  File Upload  */}
                         <div className="space-y-1.5">
                             <label className="text-sm font-medium text-text-main block">Hình ảnh / Tài liệu đính kèm</label>
-                            <div className="border-2 border-dashed border-border-color rounded-xl p-6 flex flex-col items-center justify-center text-center cursor-pointer hover:border-primary/50 hover:bg-background-light transition-colors group/upload">
-                                <div className="w-10 h-10 bg-background-light rounded-full flex items-center justify-center mb-3 group-hover/upload:bg-white group-hover/upload:shadow-sm">
+                            <div className="border-2 border-dashed border-border-color rounded-xl p-6 flex flex-col items-center justify-center text-center cursor-pointer hover:border-primary/50 hover:bg-white transition-colors group/upload">
+                                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center mb-3 group-hover/upload:bg-white group-hover/upload:shadow-sm">
                                     <span className="material-symbols-outlined text-text-secondary group-hover/upload:text-primary">cloud_upload</span>
                                 </div>
                                 <p className="text-sm font-medium text-text-main">Nhấn để tải lên hoặc kéo thả vào đây</p>
@@ -383,7 +383,7 @@ export default function Safety() {
                     </div>
                     {/*  Footer  */}
                     <div className="p-6 border-t border-border-color bg-white flex items-center justify-end gap-3 sticky bottom-0">
-                        <button className="px-5 py-2.5 rounded-lg border border-border-color text-text-main text-sm font-medium hover:bg-background-light transition-colors">
+                        <button className="px-5 py-2.5 rounded-lg border border-border-color text-text-main text-sm font-medium hover:bg-white transition-colors">
                             Hủy bỏ
                         </button>
                         <button className="px-5 py-2.5 rounded-lg bg-primary text-white text-sm font-bold shadow-md hover:bg-primary-hover hover:shadow-lg transition-all flex items-center gap-2">

@@ -6,7 +6,7 @@ export default function Issues() {
     <>
 
 {/*  Header  */}
-<header className="sticky top-0 z-30 flex items-center justify-between whitespace-nowrap border-b border-border-color bg-surface-light dark:bg-surface-dark px-6 py-3 shadow-sm">
+<header className="sticky top-0 z-30 flex items-center justify-between whitespace-nowrap border-b border-border-color bg-white dark:bg-surface-dark px-6 py-3 shadow-sm">
 <div className="flex items-center gap-8">
 <div className="flex items-center gap-3 text-primary">
 <div className="size-8 bg-primary rounded-lg flex items-center justify-center text-white">
@@ -26,7 +26,7 @@ export default function Issues() {
 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-text-secondary">
 <span className="material-symbols-outlined text-[20px]">search</span>
 </div>
-<input className="block w-full rounded-lg border-border-color bg-gray-50 dark:bg-gray-800 dark:border-gray-700 py-2 pl-10 pr-3 text-sm placeholder-gray-500 focus:border-primary focus:ring-primary sm:text-sm transition-shadow" placeholder="Search issues, machines..." type="text"/>
+<input className="block w-full rounded-lg border-border-color bg-white dark:bg-gray-800 dark:border-gray-700 py-2 pl-10 pr-3 text-sm placeholder-gray-500 focus:border-primary focus:ring-primary sm:text-sm transition-shadow" placeholder="Search issues, machines..." type="text"/>
 </div>
 <div className="flex items-center gap-3">
 <button className="relative p-2 text-text-secondary hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full transition-colors">
@@ -40,7 +40,7 @@ export default function Issues() {
 {/*  Main Content Area  */}
 <div className="flex flex-1 overflow-hidden relative">
 {/*  Left Side: Table & Filters  */}
-<main className="flex-1 flex flex-col overflow-hidden bg-background-light dark:bg-background-dark w-full md:pr-[400px]"> {/*  Added padding right to accommodate sidebar on large screens if desired, or keep it overlay  */}
+<main className="flex-1 flex flex-col overflow-hidden bg-white dark:bg-background-dark w-full md:pr-[400px]"> {/*  Added padding right to accommodate sidebar on large screens if desired, or keep it overlay  */}
 {/*  Page Header  */}
 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 px-6 py-5">
 <div className="flex flex-col gap-1">
@@ -54,11 +54,11 @@ export default function Issues() {
 </div>
 {/*  Filters Bar  */}
 <div className="px-6 pb-4">
-<div className="flex flex-col xl:flex-row gap-3 items-start xl:items-center justify-between bg-surface-light dark:bg-surface-dark p-3 rounded-xl border border-border-color shadow-sm">
+<div className="flex flex-col xl:flex-row gap-3 items-start xl:items-center justify-between bg-white dark:bg-surface-dark p-3 rounded-xl border border-border-color shadow-sm">
 <div className="flex flex-wrap gap-2 items-center w-full">
 {/*  Saved Views  */}
 <div className="relative group">
-<button className="flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-text-secondary hover:text-primary bg-gray-50 hover:bg-red-50 dark:bg-gray-800 dark:hover:bg-red-900/20 rounded-md border border-transparent hover:border-red-100 transition-all">
+<button className="flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-text-secondary hover:text-primary bg-white hover:bg-red-50 dark:bg-gray-800 dark:hover:bg-red-900/20 rounded-md border border-transparent hover:border-red-100 transition-all">
 <span className="material-symbols-outlined text-[18px]">bookmark</span>
 <span>My Default View</span>
 <span className="material-symbols-outlined text-[16px]">expand_more</span>
@@ -91,9 +91,9 @@ export default function Issues() {
 </div>
 {/*  Table Container  */}
 <div className="flex-1 overflow-auto px-6 pb-6">
-<div className="bg-surface-light dark:bg-surface-dark rounded-xl border border-border-color shadow-sm min-w-[1000px]">
+<div className="bg-white dark:bg-surface-dark rounded-xl border border-border-color shadow-sm min-w-[1000px]">
 <table className="w-full text-left border-collapse">
-<thead className="bg-gray-50 dark:bg-gray-800/50 text-xs uppercase text-text-secondary font-semibold sticky top-0 z-10">
+<thead className="bg-white dark:bg-gray-800/50 text-xs uppercase text-text-secondary font-semibold sticky top-0 z-10">
 <tr>
 <th className="px-6 py-4 border-b border-border-color w-24">ID</th>
 <th className="px-6 py-4 border-b border-border-color w-32">Date</th>
@@ -255,14 +255,14 @@ export default function Issues() {
                         Showing <span className="font-medium text-slate-900 dark:text-slate-100">1</span> to <span className="font-medium text-slate-900 dark:text-slate-100">5</span> of <span className="font-medium text-slate-900 dark:text-slate-100">24</span> results
                     </div>
 <div className="flex items-center gap-2">
-<button className="p-2 rounded-lg border border-border-color bg-white dark:bg-surface-dark hover:bg-gray-50 dark:hover:bg-gray-800 text-text-secondary disabled:opacity-50">
+<button className="p-2 rounded-lg border border-border-color bg-white dark:bg-surface-dark hover:bg-white dark:hover:bg-gray-800 text-text-secondary disabled:opacity-50">
 <span className="material-symbols-outlined text-[20px]">chevron_left</span>
 </button>
 <button className="px-3.5 py-2 rounded-lg bg-primary text-white text-sm font-medium">1</button>
-<button className="px-3.5 py-2 rounded-lg border border-border-color bg-white dark:bg-surface-dark hover:bg-gray-50 dark:hover:bg-gray-800 text-sm font-medium text-slate-700 dark:text-slate-300 transition-colors">2</button>
-<button className="px-3.5 py-2 rounded-lg border border-border-color bg-white dark:bg-surface-dark hover:bg-gray-50 dark:hover:bg-gray-800 text-sm font-medium text-slate-700 dark:text-slate-300 transition-colors">3</button>
+<button className="px-3.5 py-2 rounded-lg border border-border-color bg-white dark:bg-surface-dark hover:bg-white dark:hover:bg-gray-800 text-sm font-medium text-slate-700 dark:text-slate-300 transition-colors">2</button>
+<button className="px-3.5 py-2 rounded-lg border border-border-color bg-white dark:bg-surface-dark hover:bg-white dark:hover:bg-gray-800 text-sm font-medium text-slate-700 dark:text-slate-300 transition-colors">3</button>
 <span className="px-2 text-text-secondary">...</span>
-<button className="p-2 rounded-lg border border-border-color bg-white dark:bg-surface-dark hover:bg-gray-50 dark:hover:bg-gray-800 text-text-secondary">
+<button className="p-2 rounded-lg border border-border-color bg-white dark:bg-surface-dark hover:bg-white dark:hover:bg-gray-800 text-text-secondary">
 <span className="material-symbols-outlined text-[20px]">chevron_right</span>
 </button>
 </div>
@@ -270,9 +270,9 @@ export default function Issues() {
 </div>
 </main>
 {/*  Slide-out Detail Panel (Overlay)  */}
-<aside className="absolute top-0 right-0 h-full w-[400px] bg-surface-light dark:bg-surface-dark border-l border-border-color shadow-2xl z-20 overflow-y-auto flex flex-col">
+<aside className="absolute top-0 right-0 h-full w-[400px] bg-white dark:bg-surface-dark border-l border-border-color shadow-2xl z-20 overflow-y-auto flex flex-col">
 {/*  Panel Header  */}
-<div className="p-6 border-b border-border-color sticky top-0 bg-surface-light dark:bg-surface-dark z-10">
+<div className="p-6 border-b border-border-color sticky top-0 bg-white dark:bg-surface-dark z-10">
 <div className="flex items-center justify-between mb-2">
 <span className="text-sm font-medium text-primary">Issue #1024</span>
 <button className="text-text-secondary hover:text-slate-900 dark:hover:text-slate-100 transition-colors">
@@ -329,7 +329,7 @@ export default function Issues() {
                          <button className="text-primary text-xs font-medium hover:underline">+ Add</button>
 </h4>
 <div className="flex gap-3">
-<div className="size-20 rounded-lg bg-gray-100 border border-gray-200 flex items-center justify-center cursor-pointer hover:bg-gray-50 transition-colors">
+<div className="size-20 rounded-lg bg-gray-100 border border-gray-200 flex items-center justify-center cursor-pointer hover:bg-white transition-colors">
 <div className="text-center">
 <span className="material-symbols-outlined text-gray-400">image</span>
 </div>
@@ -347,7 +347,7 @@ export default function Issues() {
 <div className="flex flex-col gap-1">
 <span className="text-xs text-text-secondary">Today, 09:15 AM</span>
 <p className="text-sm text-slate-900 dark:text-slate-100"><span className="font-medium">Alex M.</span> added a note.</p>
-<div className="bg-gray-50 dark:bg-gray-800 p-3 rounded-lg text-sm text-text-secondary mt-1 border border-gray-100 dark:border-gray-700">
+<div className="bg-white dark:bg-gray-800 p-3 rounded-lg text-sm text-text-secondary mt-1 border border-gray-100 dark:border-gray-700">
                                     Parts ordered. ETA 2 hours.
                                 </div>
 </div>
@@ -364,15 +364,15 @@ export default function Issues() {
 </div>
 </div>
 {/*  Panel Footer Actions  */}
-<div className="p-4 border-t border-border-color bg-gray-50 dark:bg-gray-800/50 mt-auto flex flex-col gap-3">
+<div className="p-4 border-t border-border-color bg-white dark:bg-gray-800/50 mt-auto flex flex-col gap-3">
 <div className="flex gap-2">
 <input className="flex-1 text-sm rounded-md border-border-color bg-white dark:bg-surface-dark focus:border-primary focus:ring-primary px-3 py-2" placeholder="Type a note..." type="text"/>
-<button className="p-2 bg-white border border-border-color rounded-md hover:bg-gray-50 text-text-secondary hover:text-primary transition-colors">
+<button className="p-2 bg-white border border-border-color rounded-md hover:bg-white text-text-secondary hover:text-primary transition-colors">
 <span className="material-symbols-outlined text-[20px]">send</span>
 </button>
 </div>
 <div className="flex gap-3">
-<button className="flex-1 px-4 py-2 text-sm font-medium text-slate-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 hover:text-primary transition-colors">Edit Issue</button>
+<button className="flex-1 px-4 py-2 text-sm font-medium text-slate-700 bg-white border border-gray-300 rounded-lg hover:bg-white hover:text-primary transition-colors">Edit Issue</button>
 <button className="flex-1 px-4 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-primary-dark shadow-sm transition-colors">Close Issue</button>
 </div>
 </div>
