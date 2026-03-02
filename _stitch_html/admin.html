@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>DDS Meeting - Cài đặt</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#d23744",
+                        "primary-hover": "#b92b37",
+                        "background-light": "#f5f5f5",
+                        "background-dark": "#1f1314",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#2a1d1e",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display antialiased min-h-screen flex flex-col">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-gray-200 dark:border-gray-800 bg-surface-light dark:bg-surface-dark px-6 py-3 shadow-sm">
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-3xl">grid_view</span>
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-tight">DDS Meeting</h2>
+</div>
+</div>
+<nav class="hidden md:flex items-center gap-1">
+<a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary px-4 py-2 text-sm font-medium rounded-lg transition-colors" href="#">Bảng điều khiển</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary px-4 py-2 text-sm font-medium rounded-lg transition-colors" href="#">Sự cố</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary px-4 py-2 text-sm font-medium rounded-lg transition-colors" href="#">Cảnh báo</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary px-4 py-2 text-sm font-medium rounded-lg transition-colors" href="#">Báo cáo</a>
+<a class="text-primary bg-primary/10 px-4 py-2 text-sm font-bold rounded-lg transition-colors" href="#">Cài đặt</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<div class="flex items-center gap-3 pl-4 border-l border-gray-200 dark:border-gray-700">
+<div class="text-right hidden sm:block">
+<p class="text-sm font-semibold text-slate-900 dark:text-white">Admin HSE</p>
+<p class="text-xs text-slate-500 dark:text-slate-400">Quản trị viên</p>
+</div>
+<div class="h-10 w-10 rounded-full bg-slate-200 dark:bg-slate-700 bg-cover bg-center border-2 border-white dark:border-gray-800 shadow-sm" data-alt="User profile avatar of a smiling man" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAQ4-iCYvYsSsgEXxMvdIJgqBegScT2TBAVD_XH--nfQAfKAlO87523I8IhRgxpWLuX1uRnQxgMbzX9XRK_ZJiLA7LcQHde4Z7V05HkpHPW1bjVZr5plnHPyQI1mxnqumUHPKubTQwOchIQdAh4TaC6W-M4LUpJPwCGtUUMccDfswVMWMVgyTBtUO_rh_3NeBPwN8iW-0HZSCOLkBuWaOuKlhCsJUZ1MGS4YoTr63A_fiZMgDUrLt8DaEH1LY4-1mTGeJZ3YTvMGco');">
+</div>
+</div>
+</div>
+</header>
+<!-- Main Layout -->
+<main class="flex-grow w-full max-w-[1440px] mx-auto p-6 md:p-8 lg:p-10">
+<div class="flex flex-col lg:flex-row gap-8 items-start h-full">
+<!-- Sidebar Navigation -->
+<aside class="w-full lg:w-64 flex-shrink-0 flex flex-col gap-2">
+<div class="mb-4 px-2">
+<h1 class="text-2xl font-bold text-slate-900 dark:text-white">Cài đặt</h1>
+<p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Quản lý hệ thống DDS</p>
+</div>
+<div class="bg-surface-light dark:bg-surface-dark rounded-xl shadow-sm border border-gray-200 dark:border-gray-800 p-2 flex flex-col gap-1">
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-primary/10 text-primary font-medium transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">group</span>
+<span class="text-sm">Quản lý người dùng</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">sell</span>
+<span class="text-sm">Mã lý do &amp; Mức độ</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">settings</span>
+<span class="text-sm">Cài đặt hệ thống</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">security</span>
+<span class="text-sm">Bảo mật &amp; Quyền</span>
+</a>
+</div>
+</aside>
+<!-- Main Content Area -->
+<div class="flex-1 w-full bg-surface-light dark:bg-surface-dark rounded-xl shadow-sm border border-gray-200 dark:border-gray-800 overflow-hidden flex flex-col">
+<!-- Content Header -->
+<div class="p-6 border-b border-gray-100 dark:border-gray-800 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div>
+<h2 class="text-xl font-bold text-slate-900 dark:text-white">Danh sách người dùng</h2>
+<p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Quản lý tài khoản và quyền truy cập vào hệ thống.</p>
+</div>
+<button class="bg-primary hover:bg-primary-hover text-white px-4 py-2.5 rounded-lg text-sm font-semibold flex items-center gap-2 shadow-sm transition-colors group">
+<span class="material-symbols-outlined text-[20px] group-hover:scale-110 transition-transform">add</span>
+<span>Tạo người dùng</span>
+</button>
+</div>
+<!-- Filters & Search -->
+<div class="px-6 py-4 bg-slate-50/50 dark:bg-slate-900/20 border-b border-gray-100 dark:border-gray-800 flex flex-wrap gap-3">
+<div class="relative flex-grow max-w-md">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-[20px]">search</span>
+<input class="w-full pl-10 pr-4 py-2 rounded-lg border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-800 text-sm focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-shadow" placeholder="Tìm kiếm theo tên hoặc email..." type="text"/>
+</div>
+<select class="px-3 py-2 rounded-lg border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-800 text-sm text-slate-600 dark:text-slate-300 focus:ring-2 focus:ring-primary outline-none">
+<option value="">Tất cả bộ phận</option>
+<option value="safe">An toàn</option>
+<option value="prod">Sản xuất</option>
+<option value="quality">Chất lượng</option>
+</select>
+<select class="px-3 py-2 rounded-lg border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-800 text-sm text-slate-600 dark:text-slate-300 focus:ring-2 focus:ring-primary outline-none">
+<option value="">Tất cả trạng thái</option>
+<option value="active">Hoạt động</option>
+<option value="inactive">Đã khóa</option>
+</select>
+</div>
+<!-- Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-slate-50 dark:bg-slate-800/50 border-b border-gray-200 dark:border-gray-800 text-xs uppercase text-slate-500 dark:text-slate-400 font-semibold tracking-wider">
+<th class="px-6 py-4">Họ tên</th>
+<th class="px-6 py-4 hidden sm:table-cell">Email</th>
+<th class="px-6 py-4">Vai trò</th>
+<th class="px-6 py-4 hidden md:table-cell">Bộ phận</th>
+<th class="px-6 py-4">Trạng thái</th>
+<th class="px-6 py-4 text-right">Thao tác</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-gray-100 dark:divide-gray-800">
+<!-- Row 1 -->
+<tr class="group hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
+<td class="px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="h-9 w-9 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-sm">NA</div>
+<div>
+<p class="font-medium text-slate-900 dark:text-white text-sm">Nguyễn Văn A</p>
+<p class="text-xs text-slate-500 sm:hidden">a.nguyen@dds.com</p>
+</div>
+</div>
+</td>
+<td class="px-6 py-4 hidden sm:table-cell text-sm text-slate-600 dark:text-slate-400">a.nguyen@dds.com</td>
+<td class="px-6 py-4">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-purple-100 text-purple-800 dark:bg-purple-900/30 dark:text-purple-300">
+                                        Admin
+                                    </span>
+</td>
+<td class="px-6 py-4 hidden md:table-cell text-sm text-slate-600 dark:text-slate-400">An toàn (HSE)</td>
+<td class="px-6 py-4">
+<div class="flex items-center gap-1.5">
+<div class="h-2 w-2 rounded-full bg-emerald-500"></div>
+<span class="text-sm text-slate-700 dark:text-slate-300">Hoạt động</span>
+</div>
+</td>
+<td class="px-6 py-4 text-right">
+<button class="text-slate-400 hover:text-primary transition-colors p-1">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="group hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
+<td class="px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="h-9 w-9 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold text-sm">TB</div>
+<div>
+<p class="font-medium text-slate-900 dark:text-white text-sm">Trần Thị B</p>
+<p class="text-xs text-slate-500 sm:hidden">b.tran@dds.com</p>
+</div>
+</div>
+</td>
+<td class="px-6 py-4 hidden sm:table-cell text-sm text-slate-600 dark:text-slate-400">b.tran@dds.com</td>
+<td class="px-6 py-4">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-slate-100 text-slate-800 dark:bg-slate-700 dark:text-slate-300">
+                                        Nhân viên
+                                    </span>
+</td>
+<td class="px-6 py-4 hidden md:table-cell text-sm text-slate-600 dark:text-slate-400">Sản xuất</td>
+<td class="px-6 py-4">
+<div class="flex items-center gap-1.5">
+<div class="h-2 w-2 rounded-full bg-emerald-500"></div>
+<span class="text-sm text-slate-700 dark:text-slate-300">Hoạt động</span>
+</div>
+</td>
+<td class="px-6 py-4 text-right">
+<button class="text-slate-400 hover:text-primary transition-colors p-1">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="group hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
+<td class="px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="h-9 w-9 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center font-bold text-sm">LC</div>
+<div>
+<p class="font-medium text-slate-900 dark:text-white text-sm">Lê Văn C</p>
+<p class="text-xs text-slate-500 sm:hidden">c.le@dds.com</p>
+</div>
+</div>
+</td>
+<td class="px-6 py-4 hidden sm:table-cell text-sm text-slate-600 dark:text-slate-400">c.le@dds.com</td>
+<td class="px-6 py-4">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-slate-100 text-slate-800 dark:bg-slate-700 dark:text-slate-300">
+                                        Người xem
+                                    </span>
+</td>
+<td class="px-6 py-4 hidden md:table-cell text-sm text-slate-600 dark:text-slate-400">Chất lượng (QA)</td>
+<td class="px-6 py-4">
+<div class="flex items-center gap-1.5">
+<div class="h-2 w-2 rounded-full bg-amber-400"></div>
+<span class="text-sm text-slate-700 dark:text-slate-300">Chờ kích hoạt</span>
+</div>
+</td>
+<td class="px-6 py-4 text-right">
+<button class="text-slate-400 hover:text-primary transition-colors p-1">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="group hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
+<td class="px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="h-9 w-9 rounded-full bg-pink-100 text-pink-600 flex items-center justify-center font-bold text-sm">PD</div>
+<div>
+<p class="font-medium text-slate-900 dark:text-white text-sm">Phạm Văn D</p>
+<p class="text-xs text-slate-500 sm:hidden">d.pham@dds.com</p>
+</div>
+</div>
+</td>
+<td class="px-6 py-4 hidden sm:table-cell text-sm text-slate-600 dark:text-slate-400">d.pham@dds.com</td>
+<td class="px-6 py-4">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-slate-100 text-slate-800 dark:bg-slate-700 dark:text-slate-300">
+                                        Nhân viên
+                                    </span>
+</td>
+<td class="px-6 py-4 hidden md:table-cell text-sm text-slate-600 dark:text-slate-400">Bảo trì</td>
+<td class="px-6 py-4">
+<div class="flex items-center gap-1.5">
+<div class="h-2 w-2 rounded-full bg-slate-300 dark:bg-slate-600"></div>
+<span class="text-sm text-slate-500 dark:text-slate-400">Đã khóa</span>
+</div>
+</td>
+<td class="px-6 py-4 text-right">
+<button class="text-slate-400 hover:text-primary transition-colors p-1">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination -->
+<div class="px-6 py-4 border-t border-gray-100 dark:border-gray-800 flex items-center justify-between">
+<p class="text-sm text-slate-500 dark:text-slate-400">Hiển thị <span class="font-medium text-slate-900 dark:text-white">1-4</span> trong <span class="font-medium text-slate-900 dark:text-white">24</span> người dùng</p>
+<div class="flex gap-2">
+<button class="px-3 py-1 text-sm border border-gray-200 dark:border-gray-700 rounded-lg text-slate-500 disabled:opacity-50" disabled="">Trước</button>
+<button class="px-3 py-1 text-sm border border-gray-200 dark:border-gray-700 rounded-lg text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Sau</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Overlay Modal for Creating User -->
+<div class="fixed inset-0 z-[100] bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
+<!-- Modal Content -->
+<div class="bg-surface-light dark:bg-surface-dark w-full max-w-lg rounded-xl shadow-2xl border border-gray-200 dark:border-gray-800 overflow-hidden transform transition-all animate-fade-in-up">
+<!-- Modal Header -->
+<div class="flex items-center justify-between px-6 py-5 border-b border-gray-100 dark:border-gray-800 bg-slate-50/50 dark:bg-slate-800/30">
+<h3 class="text-lg font-bold text-slate-900 dark:text-white">Thêm người dùng mới</h3>
+<button class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition-colors">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<!-- Modal Body -->
+<div class="p-6 space-y-5">
+<!-- Name Field -->
+<div class="space-y-1.5">
+<label class="block text-sm font-medium text-slate-700 dark:text-slate-200">Tên người dùng</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-[20px]">person</span>
+<input class="w-full pl-10 pr-4 py-2.5 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-slate-800 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-shadow text-sm" placeholder="Nhập họ và tên" type="text"/>
+</div>
+</div>
+<!-- Email Field -->
+<div class="space-y-1.5">
+<label class="block text-sm font-medium text-slate-700 dark:text-slate-200">Email</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-[20px]">mail</span>
+<input class="w-full pl-10 pr-4 py-2.5 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-slate-800 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-shadow text-sm" placeholder="user@company.com" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<!-- Role Dropdown -->
+<div class="space-y-1.5">
+<label class="block text-sm font-medium text-slate-700 dark:text-slate-200">Vai trò</label>
+<select class="w-full px-3 py-2.5 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-slate-800 focus:ring-2 focus:ring-primary focus:border-transparent outline-none text-sm text-slate-700 dark:text-slate-200">
+<option>Nhân viên</option>
+<option>Admin (Quản trị)</option>
+<option>Người xem (Chỉ xem)</option>
+</select>
+</div>
+<!-- Department Dropdown -->
+<div class="space-y-1.5">
+<label class="block text-sm font-medium text-slate-700 dark:text-slate-200">Bộ phận</label>
+<select class="w-full px-3 py-2.5 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-slate-800 focus:ring-2 focus:ring-primary focus:border-transparent outline-none text-sm text-slate-700 dark:text-slate-200">
+<option>An toàn</option>
+<option>Sản xuất</option>
+<option>Chất lượng</option>
+<option>Bảo trì</option>
+<option>Kho vận</option>
+</select>
+</div>
+</div>
+<!-- Toggle Switch -->
+<div class="flex items-center justify-between pt-2">
+<div class="flex flex-col">
+<span class="text-sm font-medium text-slate-700 dark:text-slate-200">Gửi email kích hoạt</span>
+<span class="text-xs text-slate-500 dark:text-slate-400">Người dùng sẽ nhận link đặt lại mật khẩu</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+<!-- Modal Footer -->
+<div class="px-6 py-4 bg-slate-50 dark:bg-slate-800/50 border-t border-gray-100 dark:border-gray-800 flex justify-end gap-3">
+<button class="px-4 py-2 rounded-lg text-sm font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+                    Hủy bỏ
+                </button>
+<button class="px-4 py-2 rounded-lg text-sm font-bold text-white bg-primary hover:bg-primary-hover shadow-md transition-all hover:shadow-lg">
+                    Lưu người dùng
+                </button>
+</div>
+</div>
+</div>
+</body></html>
